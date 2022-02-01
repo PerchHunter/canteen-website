@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Demo styles -->
+  <link rel="stylesheet" crossorigin="anonymous"
+    href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zd2lwZXJqcy5jb20vZGVtb3MvMDMwLXBhZ2luYXRpb24vY29yZS5odG1s" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <!-- <nav>
+        <ul class="header__chapters header__chapters_placementOfItems">
+          <li class="chapter">Компания</li>
+          <li class="chapter">Портфолио</li>
+          <li class="chapter">Проектирование</li>
+          <li><span class="header__division"></span></li>
+          <li class="chapter">Ресторанам</li>
+          <li class="chapter">Застройщикам</li>
+          <li class="chapter">Гос.заказчикам</li>
+          <li class="chapter">Таблет-питание</li>
+          <li><span class="header__division"></span></li>
+          <li class="chapter">Сервис</li>
+          <li class="chapter">Контакты</li>
+          <li class="chapter chapter_copyEmail" onclick="getCopyEmailButton(event)">
+            <img alt="image" src="images/header/header_email.png" class="chapter__marker" />
+            info@stolovay.ru
+          </li>
+
+          <li class="chapter">
+            <img alt="image" src="images/header/header_telephone-handle-silhouette.png" class="chapter__marker" />8 495
+            790-72-05
+          </li>
+        </ul>
+      </nav> -->
+      <nav class="header__chapters header__chapters_placementOfItems">
+        <a href="#">Компания</a>
+        <a href="#">Портфолио</a>
+        <a href="#">Проектирование</a>
+        <span class="header__division"></span>
+        <a href="#">Ресторанам</a>
+        <a href="#">Застройщикам</a>
+        <a href="#">Гос.заказчикам</a>
+        <a href="#">Таблет-питание</a>
+        <span class="header__division"></span>
+        <a href="#">Сервис</a>
+        <a href="#">Контакты</a>
+        <a href="#" class="chapter_copyEmail" onclick="getCopyEmailButton(event)">
+          <img alt="image" src="images/header/header_email.png" class="chapter__marker" />
+          info@stolovay.ru</a>
+        <a href="#"><img alt="image" src="images/header/header_telephone-handle-silhouette.png" class="chapter__marker" />8 495
+          790-72-05</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="grayBackground">
+    <div class="container">
+      <section class="sectionWithSearchString">
+        <a href="#" class="sectionWithSearchString__linkToMainPage">
+          <img src="images/section-with-search-string/label.svg" alt="image" />
+          <h1 class="linkToMainPage__headline">Столовая.РУ</h1>
+        </a>
+        <form action="#" id="search" class="formSearchString">
+          <details open="#" class="formSearchString__category formSearchString__category_marker_change">
+            <summary>Все</summary>
+          </details>
+          <input type="search" name="search" id="searchLine" class="formSearchString__input" />
+          <button class="formSearchString__button" type="button" form="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+        <div>
+          <a href="#" class="supplierPortal" mouseenter="" mouseleave=""><img
+              src="images/section-with-search-string/supplier-portal.svg" alt="logo" class="supplierPortal__image" />
+            <p class="supplierPortal__text">Мы на портале поставщиков</p>
+          </a>
+          <a class="cart"> </a>
+        </div>
+        <a class="linkToCart">
+          <div class="linkToCart__blockWithImageCart">
+            <p class="blockWithImageCart__quantity">0</p>
+            <img src="images/section-with-search-string/cart.svg" alt="image" class="blockWithImageCart__image" />
+          </div>
+
+          <div class="linkToCart__text">
+            <p class="text__amount">Сумма</p>
+            <strong class="text__price">150 000 руб.</strong>
+          </div>
+        </a>
+      </section>
+    </div>
+  </div>
+  <div class="catalog">
+    <div class="container">
+      <div class="catalog__items">
+        <div>
+          <img src="images/catalog/тепловое.png" alt="image" />
+          <p>Тепловое</p>
+        </div>
+        <div>
+          <img src="images/catalog/холодильное.png" alt="image" />
+          <p>Холодильное</p>
+        </div>
+        <div>
+          <img src="images/catalog/электромеханическое.png" alt="image" />
+          <p>Электромеханическое</p>
+        </div>
+        <div>
+          <img src="images/catalog/посудомоечное.png" alt="image" />
+          <p>Посудомоечное</p>
+        </div>
+        <div>
+          <img src="images/catalog/хлебопекарное.png" alt="image" />
+          <p>Хлебопекарное</p>
+        </div>
+        <div>
+          <img src="images/catalog/линии_раздачи.png" alt="image" />
+          <p>Линии раздачи</p>
+        </div>
+        <div>
+          <img src="images/catalog/нейтральное.png" alt="image" />
+          <p>Нейтральное</p>
+        </div>
+        <div>
+          <img src="images/catalog/для_фаст_фуда.png" alt="image" />
+          <p>Для фаст фуда</p>
+        </div>
+        <div>
+          <img src="images/catalog/для_залов.png" alt="image" />
+          <p>Для залов</p>
+        </div>
+        <div>
+          <img src="images/catalog/вспомогательное.png" alt="image" />
+          <p>Вспомогательное</p>
+        </div>
+        <div>
+          <img src="images/catalog/для_магазинов.png" alt="image" />
+          <p>Для магазинов</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grayBackground grayBackground_main">
+    <div class="container">
+      <div class="categoriesSliderSale">
+        <nav class="productСategories">
+          <p class="productСategories__header">Целевые предложения</p>
+          <ul class="productСategories__products">
+            <li>
+              <p>Кафе, барам, ресторанам</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Дестким садам и школам</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Таблет-питание</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Для столовых</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Для пищеблоков</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Государственным заказкам</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Для магазинов</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Для войсковых частей</p>
+              <span>></span>
+            </li>
+            <li>
+              <p>Все предложения</p>
+              <span>></span>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide swiper__slide_1">
+              <div class="slide_1__wrap">
+                <p>Портфолио</p>
+                <div class="slide_1__wrapForHeading">
+                  <h1 class="slide_1__heading">НИИ скорой помощи
+                    им. Н.В. Склифосовского</h1>
+                  <p class="slide_1__textAboutEquipment">Оборудование для пищеблоков</p>
+                </div>
+                <a href="#" class="slide_1__link"><button type="button" class="slide_1__button">Подробнее</button></a>
+              </div>
+              <img src="images/slider/slide-1.png" alt="image" class="slide_1__image">
+              <!-- <img src="images/slider/slide-1.png" alt="image" class="slide_1__image"> -->
+            </article>
+            <article class="swiper-slide">Slide 2</article>
+            <article class="swiper-slide">Slide 3</article>
+            <article class="swiper-slide">Slide 4</article>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+
+        <a href="#" class="saleLink">
+          <div class="sale">
+            <img src="images/offers/sale.png" class="sale__image"></img>
+            <div>
+              <p class="sale__text">Самые низкие цены</p>
+              <p class="sale__heading">Распродажа</p>
+              <p class="sale__catalog">Каталог распродаж</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
