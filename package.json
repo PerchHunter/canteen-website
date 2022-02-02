@@ -1,0 +1,38 @@
+{
+  "name": "canteen_website",
+  "version": "1.0.0",
+  "description": "Сайт столовой. Просто работа для практики",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerchHunter/canteen-website.git"
+  },
+  "author": "Sergey Feoktistov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PerchHunter/canteen-website/issues"
+  },
+  "homepage": "https://github.com/PerchHunter/canteen-website#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.3.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  }
+}
