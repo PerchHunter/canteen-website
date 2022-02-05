@@ -30,7 +30,7 @@ module.exports = {
       filename: "index.html", // название выходного файла
     }),
     // применять изменения только при горячей перезагрузке
-    new webpack.HotModuleReplacementPlugin(),
+    // new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
   ],
   module: {
@@ -57,12 +57,17 @@ module.exports = {
         // добавляем 4 загрузчика.
         // Загрузчики используются вебпаком справа налево,
         // так что последним должен быть sass-loader,
-        // затем PostCSS, затем CSS и, наконец, style-loader,
+        // затем PostCSS, затем CSS и style-loader,
         // который применяет скомпилированные стили к элементам DOM
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
+
+      // изображения. url-loader
+      // {
+      //   test: /\.(jpg|png|gif)$/,
+      //   include: /images/,
+      //   loader: "url",
+      // },
     ],
   },
 };
-
-// /\.(scss|css)$/,
