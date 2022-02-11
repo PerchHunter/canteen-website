@@ -1,0 +1,151 @@
+.chapter_telephone__wrapper {
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.chapter_telephone__dropdown {
+  width: 754px;
+  height: 364px;
+  font: 300 16px / normal "Myriad Pro - Light Semi Ext";
+  color: #000000;
+  background-color: #ffffff;
+  padding: 0 60px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown__social {
+  width: max-content;
+  text-align: left;
+}
+
+.social__title {
+  font-size: 24px;
+  color: #00aa4b;
+}
+
+.social__subtitle,
+.callback__subtitle {
+  color: #777777;
+}
+
+.social_method {
+  margin: 25px 0 15px 0;
+}
+
+.social__list li {
+  margin-top: 4px;
+}
+
+.social__list a {
+  color: #000000;
+  vertical-align: super;
+}
+
+.social__list a:hover {
+  border-bottom: 1px solid #bababa;
+}
+
+.list__mobile {
+  list-style-image: url("../../../images/header/telephone-handle-silhouette.png");
+  list-style-position: inside;
+}
+
+.list__viber {
+  list-style-image: url("../../../images/header/вайбер.svg");
+  list-style-position: inside;
+}
+
+.list__telegram {
+  list-style-image: url("../../../images/header/телеграм.svg");
+  list-style-position: inside;
+}
+
+.list__whatsapp {
+  list-style-image: url("../../../images/header/вотсап.svg");
+  list-style-position: inside;
+}
+
+.social__list {
+  color: #000000;
+}
+
+.dropdown__callback {
+  width: 260px;
+  height: 240px;
+  text-align: left;
+}
+
+.callback_title {
+  font-size: 24px;
+}
+
+.callback__form {
+  margin-top: 25px;
+  position: relative;
+}
+
+fieldset {
+  border: none;
+}
+
+.callback__input_name,
+.callback__input_tel {
+  width: 260px;
+  height: 27px;
+  font: bold 18px/22px "Myriad Pro - Light Semi Ext";
+  border: none;
+  border-bottom: 1px solid #777;
+  padding-left: 13px;
+}
+
+.callback__input_name:focus,
+.callback__input_tel:focus {
+  border-color: #ffaf2d;
+}
+
+.callback__button {
+  width: 133px;
+  height: 45px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 23px;
+  background-color: #ffaf2d;
+  color: #ffffff;
+  border: 1px solid transparent;
+  margin-top: 25px;
+}
+
+.callback__button:hover {
+  cursor: pointer;
+}
+
+#btn_close_block {
+  position: absolute;
+  font: bold 30px / normal "Myriad Pro - Light Semi Ext";
+  color: #777777;
+  top: 17px;
+  right: 16px;
+}
+
+#btn_close_block:hover {
+  color: #ffaf2d;
+}
+
+@media screen and (max-width: 1040px) {
+  .chapter_telephone__dropdown {
+    width: 650px;
+    height: 270px;
+    padding: 0 40px 0 35px;
+  }
+
+  #btn_close_block {
+    top: 5px;
+    right: 10px;
+  }
+}

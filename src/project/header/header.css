@@ -1,0 +1,119 @@
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: #00aa4b;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+.header__chapters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 48px;
+  font: 400 16px/48px "Myriad Pro - Regular";
+}
+
+.header__chapters a,
+.chapter_copyEmail,
+.chapter_telephone {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  padding: 0 0.5%;
+}
+
+.header__chapters a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.chapter_copyEmail:hover,
+.chapter_telephone:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.chapter_telephone,
+.chapter_copyEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chapter_telephone {
+  position: relative;
+}
+
+.chapter__icon {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.chapter_copyEmail {
+  position: relative;
+}
+
+.copyEmailButton {
+  font: 400 16px/45px "Myriad Pro - Regular";
+  width: 100%;
+  height: 45px;
+  -webkit-box-shadow: 4px 6px 24px rgba(0, 0, 0, 0.49);
+          box-shadow: 4px 6px 24px rgba(0, 0, 0, 0.49);
+  border: none;
+  border-radius: 23px;
+  color: #ffffff;
+  background-color: #232323;
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.chapters__division {
+  width: 1px;
+  height: 28px;
+  border: 1px solid #ffffff;
+  background-color: #d5bee7;
+  opacity: 0.25;
+  margin: auto;
+}
+
+@media screen and (max-width: 1180px) {
+  .header__chapters,
+  .copyEmailButton {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .header__chapters,
+  .copyEmailButton {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__chapters,
+  .copyEmailButton {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

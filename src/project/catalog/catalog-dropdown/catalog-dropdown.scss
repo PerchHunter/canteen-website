@@ -1,0 +1,76 @@
+.dropdowns_wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.thermal__dropdown_wrapper,
+.refrigerating__dropdown_wrapper {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 2;
+  visibility: hidden;
+  transition: visibility 0.2s ease-in-out;
+}
+
+.thermal__dropdown,
+.refrigerating__dropdown {
+  width: 400px;
+  height: 610px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.thermal__dropdown_list,
+.refrigerating__dropdown_list {
+  list-style-type: none;
+}
+
+.thermal__dropdown_list li,
+.refrigerating__dropdown_list li {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.thermal__dropdown_list li:last-child,
+.refrigerating__dropdown_list li:last-child {
+  border: none;
+}
+
+.dropdown__item_link {
+  font: 400 18px/40px "Myriad Pro - Light Semi Ext";
+  color: #303030;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 89px;
+  padding-right: 17px;
+}
+
+.dropdown__item_link:hover {
+  color: #ffaf2d;
+
+  & span {
+    color: #303030;
+  }
+}
+
+// 40vw
+// .thermal__submenu {
+//   height: 100%;
+//   width: 770px;
+//   visibility: hidden;
+// }
+
+// .dropdown__item_link_thermal:focus .thermal__submenu {
+//   visibility: visible;
+// }
+
+// .thermal__submenu__filters {
+//   // height: inherit;
+//   width: 43%;
+//   background-color: #f1f1f1;
+// }
+
+// .thermal__submenu__all {
+//   width: 57%;
+//   background-color: #00aa4b;
+// }

@@ -1,0 +1,204 @@
+.upperMenu {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.upperMenu__link_logo {
+  text-decoration: none;
+  height: 100%;
+}
+
+.link_logo__figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.link_logo__brand {
+  font: 400 33px "Myriad Pro - Regular";
+  color: #171717;
+  margin-left: 6px;
+}
+
+.search_wrap {
+  margin: 0 3% 0 5%;
+  width: 57%;
+}
+
+.search__form {
+  height: 35px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__input {
+  font: 400 14px/16px "Myriad Pro - Light Semi Ext";
+  color: #222222;
+  width: 100%;
+  border: none;
+}
+
+.form__button {
+  min-width: 49px;
+  font-size: 23px;
+  border: none;
+  background-color: #ffaf2d;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.form__button:hover {
+  cursor: pointer;
+}
+
+.upperMenu__supplierPortal {
+  text-decoration: none;
+  height: 100%;
+  width: 11.2%;
+  min-width: 150px;
+  padding: 0 0.5%;
+}
+
+.supplierPortal__figure {
+  height: inherit;
+  font: 400 14px/16px "Myriad Pro - Light Semi Ext";
+  color: #777777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.supplierPortal__text {
+  padding-left: 5px;
+}
+
+.upperMenu__cart {
+  text-decoration: none;
+  width: 11.2%;
+  min-width: 150px;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  padding: 0 0.5%;
+}
+
+.linkToCart:hover {
+  background-color: #ffaf2d;
+  color: #ffffff;
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+.cart__wrap_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart__quantity {
+  font: 400 14px/10px "Myriad Pro - Regular";
+  color: #ff8c00;
+}
+
+.cart__image {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.cart__wrap_text {
+  padding-left: 12px;
+  margin: auto 0;
+}
+
+.text__amount {
+  font: 300 14px/16px "Myriad Pro - Regular";
+  color: #777777;
+}
+
+.text__price {
+  font-family: "Myriad Pro - Regular";
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.upperMenu__cart:hover {
+  background-color: #ffaf2d;
+  cursor: pointer;
+}
+
+.upperMenu__cart:hover .cart__quantity,
+.upperMenu__cart:hover .text__amount,
+.upperMenu__cart:hover .text__price {
+  color: #ffffff;
+}
+
+.upperMenu__cart:hover .cart__image {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+@media screen and (max-width: 1040px) {
+  .link_logo__brand {
+    font-size: 25px;
+  }
+  .search_wrap {
+    margin: 0 2% 0 3%;
+  }
+  .form__category {
+    font-size: 14px;
+  }
+  .upperMenu__supplierPortal,
+  .upperMenu__cart {
+    min-width: 135px;
+  }
+  .supplierPortal__text,
+  .text__amount,
+  .text__price {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=upper-menu.css.map */

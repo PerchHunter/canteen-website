@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("./fonts/myriadpro-black/myriadpro-black.woff2") format("woff2"),
+    url("./fonts/myriadpro-black/myriadpro-black.woff") format("woff"),
+    url("./fonts/myriadpro-black/myriadpro-black.ttf") format("truetype"),
+    url("./fonts/myriadpro-black/myriadpro-black.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-black/myriadpro-black.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro - Light Semi Ext";
+  src: url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff2")
+      format("woff2"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff")
+      format("woff"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.ttf")
+      format("truetype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.svg")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro - Light Semi Ext";
+  src: url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff2")
+      format("woff2"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff")
+      format("woff"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.ttf")
+      format("truetype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.svg")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro - Regular";
+  src: url("./fonts/myriadpro-regular/myriadpro-regular.woff2") format("woff2"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.woff") format("woff"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.ttf") format("truetype"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page {
+  background-color: #e8e7e7;
+  transition: all 0.2s ease-in-out;
+}
+
+.page_blackoutAfterCatalog {
+  background-color: #e8e7e7;
+  transition: all 0.2s ease-in-out;
+}

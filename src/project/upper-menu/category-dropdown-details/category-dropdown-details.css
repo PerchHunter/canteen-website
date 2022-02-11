@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.form__category {
+  font: 400 16px/35px "Myriad Pro - Regular";
+  color: #777777;
+  background-color: #f1f1f1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  position: relative;
+  z-index: 4;
+}
+
+.category__checked {
+  padding-left: 17px;
+  padding-right: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  word-wrap: normal;
+}
+
+.form__category:hover {
+  cursor: pointer;
+}
+
+.form__category:hover {
+  cursor: pointer;
+}
+
+/* Убираем стандартный маркер Chrome */
+.category__checked::-webkit-details-marker {
+  display: none;
+}
+
+/* Убираем стандартный маркер Firefox */
+.category__checked {
+  list-style: none;
+}
+
+/* Добавляем собственный маркер */
+.category__checked::after {
+  content: url(../../../images/upper-menu/arrow-down.svg);
+  margin-left: 6px;
+}
+
+.category__dropdown {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font: 500 16px/22px "Myriad Pro - Light Semi Ext";
+  border: 1px solid #e8e7e7;
+  background-color: #f1f1f1;
+  padding: 17px 36px 41px 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown__heading {
+  color: #757575;
+  margin-bottom: 40px;
+  line-height: 17px;
+}
+
+.dropdown__list {
+  list-style-type: none;
+  color: #4f4f4f;
+}
+
+.dropdown__list > li:hover {
+  color: #00aa4b;
+}
+
+.highlightGreen {
+  color: #00aa4b;
+}
+/*# sourceMappingURL=category-dropdown-details.css.map */
