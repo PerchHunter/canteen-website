@@ -4,11 +4,6 @@
   background-color: #00aa4b;
 }
 
-.container {
-  max-width: 1550px;
-  margin: 0 auto;
-}
-
 .header__chapters {
   display: -webkit-box;
   display: -ms-flexbox;

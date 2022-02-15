@@ -40,3 +40,19 @@
   background-color: #e8e7e7;
   transition: all 0.2s ease-in-out;
 }
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 766px) {
+  .hideInMobileVersion {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none !important;
+  }
+}

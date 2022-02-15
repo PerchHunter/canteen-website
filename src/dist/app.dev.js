@@ -18,6 +18,8 @@ require("./project/section-with-slider/__slider/__slider.scss");
 
 require("./project/section-with-slider/__categories/dist/__categories.scss");
 
+require("./project/burger-menu/burger-menu.css");
+
 require("./project/header/header.js");
 
 require("./project/header/telephone-dropdown/telephone-dropdown.js");
@@ -29,3 +31,5 @@ require("./project/upper-menu/category-dropdown-details/category-dropdown-detail
 require("./project/catalog/catalog-dropdown/catalog-dropdown.js");
 
 require("./project/section-with-slider/__slider/__slider.js");
+
+require("./project/burger-menu/burger-menu.js");

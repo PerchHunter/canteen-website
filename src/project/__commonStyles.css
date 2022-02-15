@@ -3,33 +3,61 @@
   padding: 0;
   outline: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
   font-family: "Myriad Pro";
-  src: url("./fonts/myriadpro-black/myriadpro-black.woff2") format("woff2"), url("./fonts/myriadpro-black/myriadpro-black.woff") format("woff"), url("./fonts/myriadpro-black/myriadpro-black.ttf") format("truetype"), url("./fonts/myriadpro-black/myriadpro-black.eot") format("embedded-opentype"), url("./fonts/myriadpro-black/myriadpro-black.svg") format("svg");
+  src: url("./fonts/myriadpro-black/myriadpro-black.woff2") format("woff2"),
+    url("./fonts/myriadpro-black/myriadpro-black.woff") format("woff"),
+    url("./fonts/myriadpro-black/myriadpro-black.ttf") format("truetype"),
+    url("./fonts/myriadpro-black/myriadpro-black.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-black/myriadpro-black.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Myriad Pro - Light Semi Ext";
-  src: url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff2") format("woff2"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff") format("woff"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.ttf") format("truetype"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.eot") format("embedded-opentype"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.svg") format("svg");
+  src: url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff2")
+      format("woff2"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff")
+      format("woff"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.ttf")
+      format("truetype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.svg")
+      format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Myriad Pro - Light Semi Ext";
-  src: url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff2") format("woff2"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff") format("woff"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.ttf") format("truetype"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.eot") format("embedded-opentype"), url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.svg") format("svg");
+  src: url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff2")
+      format("woff2"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.woff")
+      format("woff"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.ttf")
+      format("truetype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-lightsemiext/myriadpro-lightsemiext.svg")
+      format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Myriad Pro - Regular";
-  src: url("./fonts/myriadpro-regular/myriadpro-regular.woff2") format("woff2"), url("./fonts/myriadpro-regular/myriadpro-regular.woff") format("woff"), url("./fonts/myriadpro-regular/myriadpro-regular.ttf") format("truetype"), url("./fonts/myriadpro-regular/myriadpro-regular.eot") format("embedded-opentype"), url("./fonts/myriadpro-regular/myriadpro-regular.svg") format("svg");
+  src: url("./fonts/myriadpro-regular/myriadpro-regular.woff2") format("woff2"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.woff") format("woff"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.ttf") format("truetype"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.eot")
+      format("embedded-opentype"),
+    url("./fonts/myriadpro-regular/myriadpro-regular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -45,4 +73,21 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/*# sourceMappingURL=commonStyles.css.map */
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 766px) {
+  .hideInMobileVersion {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=__commonStyles.css.map */

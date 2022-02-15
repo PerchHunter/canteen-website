@@ -47,10 +47,13 @@
       crossorigin="anonymous"
       href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zd2lwZXJqcy5jb20vZGVtb3MvMDMwLXBhZ2luYXRpb24vY29yZS5odG1s"
     />
+
+    <!-- бургер - меню с типом оборудования в мобильной версии -->
+    <link rel="stylesheet" href="./project/burger-menu/burger-menu.css" />
   </head>
 
   <body>
-    <div class="header">
+    <div class="header hideInMobileVersion">
       <div class="container">
         <nav class="header__chapters">
           <a href="#">Компания</a>
@@ -150,8 +153,28 @@
       </div>
     </div>
 
+    <!-- бургер-меню "Оборудование", которое будет в мобильной версии -->
+    <nav class="burger-menu">
+      <p>Оборудование</p>
+      <span class="menu-burger__span">></span>
+
+      <ul class="menu-burger__list">
+        <li><a class="burger__menu_item" href="#">Тепловое</a></li>
+        <li><a class="burger__menu_item" href="#">Холодильное</a></li>
+        <li><a class="burger__menu_item" href="#">Электромеханическое</a></li>
+        <li><a class="burger__menu_item" href="#">Посудомоечное</a></li>
+        <li><a class="burger__menu_item" href="#">Барное</a></li>
+        <li><a class="burger__menu_item" href="#">Хлебопекарное</a></li>
+        <li><a class="burger__menu_item" href="#">Линии раздачи</a></li>
+        <li><a class="burger__menu_item" href="#">Нейтральное</a></li>
+        <li><a class="burger__menu_item" href="#">Для фаст фуда</a></li>
+        <li><a class="burger__menu_item" href="#">Для залов</a></li>
+        <li><a class="burger__menu_item" href="#">Весовое</a></li>
+      </ul>
+    </nav>
+
     <div class="page">
-      <div class="container">
+      <div class="container hideInMobileVersion">
         <div class="upperMenu">
           <a href="#" class="upperMenu__link_logo">
             <figure class="link_logo__figure">
@@ -225,7 +248,7 @@
         </div>
       </div>
 
-      <div class="catalog_background">
+      <div class="catalog_background hideInMobileVersion">
         <div class="container">
           <section class="catalog">
             <div id="catalog__thermal">
@@ -460,7 +483,7 @@
       <div class="page page_blackoutAfterCatalog">
         <div class="container container_padding">
           <div class="sectionWithSlider">
-            <nav class="productСategories">
+            <nav class="productСategories hideInMobileVersion">
               <h3 class="productСategories__heading">Целевые предложения</h3>
               <ul class="productСategories__products">
                 <li>
@@ -566,6 +589,11 @@
     <script
       type="text/javascript"
       src="project/section-with-slider/__slider/__slider.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="./project/burger-menu/burger-menu.js"
     ></script>
   </body>
 </html>
