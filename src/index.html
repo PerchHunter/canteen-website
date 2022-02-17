@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
 
-    <link rel="stylesheet" href="./project/__commonStyles.css" />
+    <link rel="stylesheet" href="./project/commonStyles.css" />
     <link rel="stylesheet" href="./project/header/header.css" />
     <link
       rel="stylesheet"
@@ -24,11 +24,15 @@
     />
     <link
       rel="stylesheet"
-      href="./project/section-with-slider/__slider/__slider.css"
+      href="./project/section-with-slider/__slider/slider.css"
     />
     <link
       rel="stylesheet"
-      href="./project/section-with-slider/__categories/dist/__categories.css"
+      href="./project/section-with-slider/__categories/categories.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./project/section-with-slider/__sale/sale.css"
     />
 
     <link
@@ -37,6 +41,10 @@
     />
 
     <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="./project/section-with-slider/__slider/slider.css"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -50,6 +58,11 @@
 
     <!-- бургер - меню с типом оборудования в мобильной версии -->
     <link rel="stylesheet" href="./project/burger-menu/burger-menu.css" />
+    <!-- хедер в мобильной версии -->
+    <link rel="stylesheet" href="./project/header_mobile/header_mobile.css" />
+
+    <link rel="stylesheet" href="./project/brands/brands.css" />
+    <link rel="stylesheet" href="./project/news/news.css" />
   </head>
 
   <body>
@@ -153,7 +166,43 @@
       </div>
     </div>
 
-    <!-- бургер-меню "Оборудование", которое будет в мобильной версии -->
+    <!-- хедер мобильной версии -->
+    <div class="header_mobile">
+      <div class="header_mobile__wrap_left">
+        <nav class="header_mobile__burger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </nav>
+        <a href="#" class="header_mobile__link_logo">
+          <figure class="link_logo__figure">
+            <img
+              src="./images/upper-menu/label.svg"
+              alt="logo"
+              class="figure__img"
+            />
+            <figcaption class="link_logo__brand">
+              <h2 class="figure__heading">Столовая.РУ</h2>
+              Создание пищеблоков
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="header_mobile__wrap_right">
+        <div class="header_mobile__wrap_search">
+          <img src="./images/header_mobile/моб хедер поиск.svg" alt="search" />
+        </div>
+        <div class="header_mobile__wrap_phone">
+          <img src="./images/header_mobile/моб хедер телефон.png" alt="phone" />
+        </div>
+        <a href="#" class="header_mobile__cart">
+          <div class="header_mobile__cart__wrap">
+            <p class="header_mobile_cart__quantity"><span>8</span></p>
+            <img src="images/header_mobile/моб хедер корзина.png" alt="cart" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- бургер-меню "Оборудование" в мобильной версии -->
     <nav class="burger-menu">
       <p>Оборудование</p>
       <span class="menu-burger__span">></span>
@@ -208,6 +257,7 @@
                 name="search"
                 id="searchLine"
                 class="form__input"
+                placeholder="Введите что - нибудь..."
               />
               <button class="form__button" type="button" form="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -563,6 +613,79 @@
               </aside>
             </div>
           </div>
+
+          <div class="brands">
+            <div class="brands__innerWrap">
+              <a href="#" class="brands__link">
+                <img
+                  src="./images/brands/Abat.png"
+                  alt="logo"
+                  class="brands__logo" /></a
+              ><span></span>
+              <a href="#" class="brands__link"
+                ><img
+                  src="./images/brands/Atesy.png"
+                  alt="logo"
+                  class="brands__logo"
+              /></a>
+            </div>
+            <span></span>
+            <div class="brands__innerWrap">
+              <a href="#" class="brands__link">
+                <img
+                  src="./images/brands/Hicold.png"
+                  alt="logo"
+                  class="brands__logo" /></a
+              ><span></span>
+              <a href="#" class="brands__link"
+                ><img
+                  src="./images/brands/Rational.png"
+                  alt="logo"
+                  class="brands__logo"
+              /></a>
+            </div>
+            <span></span>
+            <div class="brands__innerWrap">
+              <a href="#" class="brands__link"
+                ><img
+                  src="./images/brands/Simeco.png"
+                  alt="logo"
+                  class="brands__logo" /></a
+              ><span></span>
+              <a href="#" class="brands__link"
+                ><p class="brands__text">Все бренды</p></a
+              >
+            </div>
+          </div>
+
+          <article class="news">
+            <h2 class="news__heading">Новости производителей</h2>
+            <div class="news__wrap">
+              <article class="wrap__newsWithLargeArea">
+                <img src="./images/news/big-news.png" alt="photo" />
+                <div class="news __innerWrap">
+                  <a href="#" class="news__author">Abat</a>
+                  <time datetime="2017-06-22" class="news__date">22.06.17</time>
+                </div>
+                <h3 class="news__heading">
+                  Новый разборный ротационный пекарский шкаф<abbr
+                    title="Ротационный пекарский шкаф"
+                    >РПШ-18-8-6МР</abbr
+                  >
+                </h3>
+                <p class="news__text">
+                  Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР: в
+                  комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм
+                  вместимость тележки-шпильки - 135 хлебных форм №7 инжекционный
+                  тип парообразования разборная конструкция увеличенное стекло
+                  двери. Память на 110 программ (до 4-ех этапов в каждой
+                  программе) USB-порт. Таймер до 10 ч Регулировка влажности от 0
+                  до 100%. 5 скоро
+                </p>
+              </article>
+            </div>
+            <a href="#" class="news__link">Все новости</a>
+          </article>
         </div>
       </div>
     </div>
@@ -594,6 +717,11 @@
     <script
       type="text/javascript"
       src="./project/burger-menu/burger-menu.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="./project/header_mobile/header_mobile.js"
     ></script>
   </body>
 </html>

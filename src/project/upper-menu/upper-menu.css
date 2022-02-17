@@ -46,10 +46,11 @@
 }
 
 .form__input {
-  font: 400 14px/16px "Myriad Pro - Light Semi Ext";
+  font: 400 14px/16px "Myriad Pro - Regular";
   color: #222222;
   width: 100%;
   border: none;
+  padding-left: 1%;
 }
 
 .form__button {
