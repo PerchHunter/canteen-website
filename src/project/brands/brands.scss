@@ -1,0 +1,70 @@
+.brands {
+  width: 100%;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.brands span {
+  height: 71px;
+  width: 1px;
+  border: 1px solid transparent;
+  background-color: #e8e7e7;
+}
+
+.brands__innerWrap {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / 3);
+  background-color: initial;
+}
+
+.brands__link {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #232323;
+  transition: color 0.2s;
+}
+
+.brands__logo {
+  width: 52%;
+}
+
+.brands__text {
+  font: 400 18px "Myriad Pro - Regular";
+}
+.brands__link:hover {
+  color: #ffaf2d;
+}
+
+@media screen and (max-width: 768px) {
+  .brands {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+    background-color: initial;
+  }
+
+  .brands > span {
+    display: none;
+  }
+
+  .brands__innerWrap {
+    width: 100%;
+    height: 169px;
+    margin-bottom: 3px;
+    background-color: #fff;
+  }
+
+  .brands__innerWrap:last-of-type {
+    margin-bottom: 0px;
+  }
+}

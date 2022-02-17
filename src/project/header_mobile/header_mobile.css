@@ -1,0 +1,115 @@
+.header_mobile {
+  height: 100px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #f1f1f1;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_mobile__wrap_left,
+.header_mobile__wrap_right {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_mobile__wrap_right div {
+  padding: 19px 15px;
+}
+
+.header_mobile__burger {
+  width: 73px;
+  height: 73px;
+  background-color: #fda11c;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 31px;
+}
+
+.header_mobile__burger {
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: #ffffff;
+  line-height: 73px;
+  font-size: 30px;
+}
+
+.header_mobile__link_logo {
+  text-decoration: none;
+  height: 55px;
+}
+
+.link_logo__figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.figure__img {
+  height: 100%;
+}
+
+.link_logo__brand {
+  font: 400 18px "Myriad Pro - Regular";
+  color: #777777;
+}
+
+.figure__heading {
+  font-size: 30px;
+  color: #353535;
+}
+
+.header_mobile__wrap_search:hover,
+.header_mobile__wrap_phone:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+
+.header_mobile__cart {
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.header_mobile__cart__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_mobile_cart__quantity {
+  font: 400 25px/10px "Myriad Pro - Regular";
+  color: #ff8c00;
+}
+
+.header_mobile__cart:hover {
+  background-color: #ffaf2d;
+  cursor: pointer;
+}
+
+.header_mobile__cart:hover .header_mobile_cart__quantity {
+  color: #ffffff;
+}
+/*# sourceMappingURL=header_mobile.css.map */

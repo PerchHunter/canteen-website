@@ -1,0 +1,118 @@
+.sidebar_sale_wrap {
+  height: 100%;
+  width: 15.5%;
+  display: inline-table;
+}
+
+.sidebar_sale {
+  height: 476px;
+  width: 300px;
+  font: 400 18px/20px "Myriad Pro - Regular";
+  color: #121212;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 2px solid rgba(48, 48, 48, 0.4);
+  padding: 0px 0px 52px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sidebar_sale:hover {
+  border-color: #ffaf2d;
+}
+
+.sale__image {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 18px;
+}
+
+.sale__heading {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.sale__link_catalog {
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.link_catalog__text {
+  font-weight: 300;
+  color: #ffaf2d;
+}
+
+.link_catalog__text::after {
+  content: " >";
+  display: block;
+  float: right;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1410px) {
+  .sidebar_sale {
+    padding: 0px 0px 52px 5%;
+    width: 19vw;
+    font-size: 14px;
+  }
+  .sale__heading {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .sidebar_sale {
+    padding-left: 3%;
+    font-size: 12px;
+  }
+  .sale__heading {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar_sale {
+    width: 100%;
+    padding: 0 0 68px 60px;
+  }
+  .sidebar_sale_wrap {
+    width: 100%;
+    display: block;
+    margin: 30px 0;
+  }
+  .sale__image {
+    width: 118px;
+    height: 146px;
+    margin-bottom: 26px;
+  }
+  .sale__text {
+    font: 300 25px/30px "Myriad Pro - Light Semi Ext";
+    color: #181818;
+  }
+  .sale__heading {
+    font: 400 50px/55px "Myriad Pro - Regular";
+    margin: 0 0 50px;
+  }
+  .sale__link_catalog {
+    font: 300 30px/20px "Myriad Pro - Light Semi Ext";
+  }
+}
+/*# sourceMappingURL=sale.css.map */

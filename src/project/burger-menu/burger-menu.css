@@ -1,0 +1,57 @@
+.burger-menu {
+  width: 100vw;
+  height: 83px;
+  border-top: 1px solid #e2e2e2;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  font: 400 30px "Myriad Pro - Light Semi Ext";
+  color: #000;
+  position: relative;
+}
+
+.burger-menu:hover {
+  cursor: pointer;
+}
+
+.menu-burger__span {
+  color: #777777;
+}
+
+.menu-burger__list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  list-style: none;
+  background-color: inherit;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  z-index: 2;
+}
+
+.burger__menu_item {
+  font: 400 24px "Myriad Pro - Light Semi Ext";
+  display: block;
+  padding: 0;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  height: 0;
+  opacity: 0;
+}
+
+.burger__menu_item:hover {
+  color: #ffaf2d;
+  background-color: #ebebeb;
+}
+/*# sourceMappingURL=burger-menu.css.map */

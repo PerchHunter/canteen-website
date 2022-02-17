@@ -1,0 +1,55 @@
+.news {
+  padding: 0 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #121212;
+}
+
+.news__heading {
+  font: 400 40px "Myriad Pro - Regular";
+}
+
+.news__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (168px)[3];
+      grid-template-rows: repeat(3, 168px);
+  -ms-grid-columns: 490px 820px;
+      grid-template-columns: 490px 820px;
+  row-gap: 43px;
+  -webkit-column-gap: 105px;
+          column-gap: 105px;
+}
+
+.wrap__newsWithLargeArea {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/6/2;
+}
+
+.news__link {
+  width: 167px;
+  height: 35px;
+  font: 400 16px/35px "Myriad Pro - Light Semi Ext";
+  text-align: center;
+  border-radius: 17px;
+  color: #121212;
+  border: 2px solid #121212;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.news__link:hover {
+  border: 2px solid #ffaf2d;
+}
+/*# sourceMappingURL=news.css.map */
