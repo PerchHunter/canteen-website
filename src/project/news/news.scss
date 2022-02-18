@@ -1,25 +1,67 @@
+.wrap_newsSection {
+  margin-top: 175px;
+  width: 100%;
+  padding: 0 4.32%;
+}
+
 .news {
-  padding: 0 67px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: #121212;
 }
 
-.news__heading {
+.news__head {
   font: 400 40px "Myriad Pro - Regular";
 }
 
 .news__wrap {
+  height: 590px;
   display: grid;
-  grid-template-rows: repeat(3, 168px);
-  grid-template-columns: 490px 820px;
-  row-gap: 43px;
-  column-gap: 105px;
+  grid-template-rows: repeat(3, 28.5%);
+  grid-template-columns: 34.6% 1fr;
+  row-gap: 7.25%;
+  column-gap: 7.4%;
+  margin: 50px 0;
 }
 
-.wrap__newsWithLargeArea {
-  grid-area: 1/1/6/2;
+.news__leftNews {
+  grid-area: 1/1/4/2;
+}
+
+.news__article {
+  font: 300 16px "Myriad Pro - Light Semi Ext";
+  color: #121212;
+}
+
+.leftNews__image {
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.text__innerWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text__author {
+  color: #00aa4b;
+}
+
+.text__date {
+  color: #777777;
+}
+
+.text__title {
+  font: 400 1.25em "Myriad Pro - Regular";
+  margin: 10px 0 20px;
+}
+
+.text__excerpt {
+  -webkit-line-clamp: 3; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
 }
 
 .news__link {
@@ -36,3 +78,80 @@
 .news__link:hover {
   border: 2px solid #ffaf2d;
 }
+
+.news__rightImages {
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.news__rightTopNews,
+.news__rightMiddleNews,
+.news__rightBottomNews {
+  display: flex;
+  grid-column: 2/3;
+}
+
+.news__rightTopNews {
+  grid-row: 1/2;
+}
+
+.news__rightMiddleNews {
+  grid-row: 2/3;
+}
+
+.news__rightBottomNews {
+  grid-row: 3/4;
+}
+
+@media screen and (max-width: 1250px) {
+  .news__wrap {
+    height: 490px;
+    margin: 40px 0;
+  }
+
+  .news__head {
+    font-size: 34px;
+  }
+
+  .news__article {
+    font-size: 14px;
+  }
+
+  .text__title {
+    margin: 5px 0 10px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .news__wrap {
+    height: 440px;
+    margin: 30px 0;
+  }
+
+  .news__head {
+    font-size: 28px;
+  }
+
+  .news__article {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .news__wrap {
+    height: 390px;
+    margin: 25px 0;
+  }
+
+  .news__head {
+    font-size: 22px;
+  }
+
+  .news__article {
+    font-size: 10px;
+  }
+
+  .news__wrap {
+    row-gap: 26px;
+  }
+} ;
