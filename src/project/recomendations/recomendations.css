@@ -1,0 +1,155 @@
+.wrap_recommendationsSection {
+  margin-top: 172px;
+  width: 100%;
+  padding: 0 4.32%;
+}
+
+.recommendations {
+  font: 400 40px / normal "Myriad Pro - Regular";
+  color: #121212;
+  text-align: center;
+}
+
+.recommendations__head {
+  font-size: 1em;
+}
+
+.recommendations__text {
+  font: 400 16px / 16px "Myriad Pro - Light Semi Ext";
+  color: #787878;
+  width: 658px;
+  margin: 30px auto 68px;
+}
+
+.recommendations__innerWrap {
+  width: 100%;
+  height: 745px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 56.3% 42.4%;
+  -ms-grid-columns: 42.6% 56.4%;
+      grid-template: 56.3% 42.4% /42.6% 56.4%;
+  row-gap: 1%;
+  -webkit-column-gap: 0.7%;
+          column-gap: 0.7%;
+}
+
+.recommendations__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.textContent__brand {
+  font: 400 0.5em/20px "Myriad Pro - Light Semi Ext";
+  color: #121212;
+  text-transform: uppercase;
+}
+
+.textContent__title {
+  font-size: 0.75em;
+  color: #121212;
+}
+
+.textContent__text {
+  font-size: 0.4em;
+  font-family: "Myriad Pro - Light Semi Ext";
+  color: #777777;
+  margin-top: 27px;
+}
+
+.wrap_leftblock {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/3/2;
+}
+
+.recommendations__link_leftBlockPadding {
+  padding: 32px 12.5% 0;
+}
+
+.recommendations__leftBlock {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/recommendations/rational.png");
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.leftBlock__textContent {
+  margin: 0 auto;
+  max-width: 284px;
+}
+
+.wrap_rightTopBlock {
+  background-color: #232323;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+
+.recommendations__rightTopBlock {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/recommendations/Abat.png");
+  background-position: left center;
+  background-size: initial;
+  background-repeat: no-repeat;
+  padding-left: 35%;
+  padding-top: 85px;
+}
+
+.rightTopBlock__textContent {
+  text-align: left;
+  max-width: 394px;
+}
+
+.textContent__title_whiteColor,
+.textContent__brand_whiteColor {
+  color: #ffffff;
+  width: 200px;
+}
+
+.wrap_rightBottomBlock {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+}
+
+.recommendations__rightBottomBlock {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/recommendations/hicold.png");
+  background-position: right center;
+  background-size: initial;
+  background-repeat: no-repeat;
+  padding-left: 8%;
+  padding-top: 73px;
+}
+
+.rightBottomBlock__textContent {
+  text-align: left;
+  max-width: 382px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap_recommendationsSection {
+    margin-top: 151px;
+  }
+}
+/*# sourceMappingURL=recomendations.css.map */
