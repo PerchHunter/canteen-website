@@ -1,7 +1,7 @@
 .wrap_recommendationsSection {
   margin-top: 172px;
   width: 100%;
-  padding: 0 4.32%;
+  padding: 0 4.3%;
 }
 
 .recommendations {
@@ -15,7 +15,7 @@
 }
 
 .recommendations__text {
-  font: 400 16px / 16px "Myriad Pro - Light Semi Ext";
+  font: 400 0.4em "Myriad Pro - Light Semi Ext";
   color: #787878;
   width: 658px;
   margin: 30px auto 68px;
@@ -41,7 +41,7 @@
 }
 
 .textContent__brand {
-  font: 400 0.5em/20px "Myriad Pro - Light Semi Ext";
+  font: 400 0.5em "Myriad Pro - Light Semi Ext";
   color: #121212;
   text-transform: uppercase;
 }
@@ -147,9 +147,109 @@
   max-width: 382px;
 }
 
+@media screen and (max-width: 1250px) {
+  .recommendations {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .recommendations {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .recommendations {
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .wrap_recommendationsSection {
     margin-top: 151px;
+    padding: 0;
+  }
+  .recommendations {
+    font-size: 50px;
+  }
+  .recommendations__text {
+    width: 100%;
+    font-size: 0.32em;
+    margin: 20px auto 76px;
+  }
+  .recommendations__innerWrap {
+    height: initial;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (483px)[3];
+        grid-template-rows: repeat(3, 483px);
+    row-gap: 10px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+  .textContent__brand {
+    font-size: 0.6em;
+  }
+  .textContent__title {
+    font-size: 0.8em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .textContent__text {
+    font-size: 0.5em;
+  }
+  .wrap_leftblock {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/2/2;
+  }
+  .recommendations__link_leftBlockPadding {
+    padding: 25px 0 0 10%;
+  }
+  .recommendations__leftBlock {
+    background-position: right bottom;
+    background-size: 37.5% 100%;
+  }
+  .leftBlock__textContent {
+    max-width: 55%;
+    text-align: left;
+    margin: 0;
+    padding-top: 93px;
+  }
+  .wrap_rightTopBlock {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/3/2;
+  }
+  .recommendations__rightTopBlock {
+    padding: 50px 10% 0 35%;
+  }
+  .rightTopBlock__textContent {
+    max-width: 380px;
+  }
+  .wrap_rightBottomBlock {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/4/2;
+  }
+  .recommendations__rightBottomBlock {
+    background-image: url("../../images/recommendations/hicold-mobile.png");
+    background-size: 30% 370px;
+    padding-left: 8%;
+    padding-top: 73px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .recommendations {
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=recomendations.css.map */

@@ -16,6 +16,7 @@ import "./project/header_mobile/header_mobile.scss";
 import "./project/brands/brands.scss";
 import "./project/news/news.scss";
 import "./project/recomendations/recommendations.scss";
+import "./project/about-us/about-us.scss";
 
 import "./project/header/header.js";
 import "./project/header/telephone-dropdown/telephone-dropdown.js";

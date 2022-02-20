@@ -37,6 +37,7 @@
 }
 
 .page {
+  padding-bottom: 171px;
   background-color: #e8e7e7;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;

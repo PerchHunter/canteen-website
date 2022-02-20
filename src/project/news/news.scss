@@ -1,7 +1,7 @@
 .wrap_newsSection {
   margin-top: 175px;
   width: 100%;
-  padding: 0 4.32%;
+  padding: 0 4.3%;
 }
 
 .news {
@@ -9,10 +9,11 @@
   flex-direction: column;
   align-items: flex-start;
   color: #121212;
+  font: 400 40px "Myriad Pro - Regular";
 }
 
 .news__head {
-  font: 400 40px "Myriad Pro - Regular";
+  font-size: 1em;
 }
 
 .news__wrap {
