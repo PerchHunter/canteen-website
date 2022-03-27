@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 1100px) {
   .productСategories__heading {
-    font-size: 13px;
+    font-size: 17px;
     padding-left: 5px;
   }
 
@@ -79,7 +79,7 @@
 
 @media screen and (max-width: 940px) {
   .productСategories__heading {
-    font-size: 13px;
+    font-size: 14px;
     padding-left: 5px;
   }
 
@@ -94,7 +94,6 @@
 
 @media screen and (max-width: 768px) {
   .sectionWithSlider {
-    // width: 100vw;
     display: flex;
     flex-direction: column;
     max-height: initial;

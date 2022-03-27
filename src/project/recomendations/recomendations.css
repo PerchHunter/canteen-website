@@ -70,7 +70,7 @@
 }
 
 .recommendations__link_leftBlockPadding {
-  padding: 32px 12.5% 0;
+  padding: 32px 0 0;
 }
 
 .recommendations__leftBlock {
@@ -78,7 +78,7 @@
   height: 100%;
   background-image: url("../../images/recommendations/rational.png");
   background-position: center bottom;
-  background-size: contain;
+  background-size: 73% 64.5%;
   background-repeat: no-repeat;
 }
 
@@ -103,7 +103,7 @@
   height: 100%;
   background-image: url("../../images/recommendations/Abat.png");
   background-position: left center;
-  background-size: initial;
+  background-size: 24% 90%;
   background-repeat: no-repeat;
   padding-left: 35%;
   padding-top: 85px;
@@ -135,8 +135,8 @@
   width: 100%;
   height: 100%;
   background-image: url("../../images/recommendations/hicold.png");
-  background-position: right center;
-  background-size: initial;
+  background-position: right bottom;
+  background-size: 37.35% 95%;
   background-repeat: no-repeat;
   padding-left: 8%;
   padding-top: 73px;
@@ -144,7 +144,7 @@
 
 .rightBottomBlock__textContent {
   text-align: left;
-  max-width: 382px;
+  max-width: 48.5%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -242,8 +242,12 @@
   .recommendations__rightBottomBlock {
     background-image: url("../../images/recommendations/hicold-mobile.png");
     background-size: 30% 370px;
+    background-position: right center;
     padding-left: 8%;
     padding-top: 73px;
+  }
+  .rightBottomBlock__textContent {
+    max-width: 65%;
   }
 }
 

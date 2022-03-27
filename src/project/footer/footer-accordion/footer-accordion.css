@@ -1,0 +1,91 @@
+.footer__accordion {
+  width: 100%;
+  font: 400 30px/30px "Myriad Pro - Light Semi Ext";
+  padding: 50px 0;
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid #f3f2f2;
+}
+
+.accordion__btn {
+  height: 95px;
+  width: 100%;
+  font-size: 1em;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  padding-right: 7px;
+  background-color: inherit;
+  color: #fff;
+}
+
+.accordion__item:hover .accordion__btn {
+  color: #ffaf2d;
+}
+
+.accordion__item--active .accordion__btn {
+  color: #ffaf2d;
+}
+
+.accordion__icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.accordion__item--active .accordion__icon {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.accordion__content {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
+  font-weight: 300;
+  overflow: hidden;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.accordion__item--active .accordion__content {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  max-height: 100vh;
+}
+
+.accordion__item--active .footer__lists,
+.accordion__item--active .footer__contacts {
+  padding: 0 0 1em 2em;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__lists,
+  .footer__contacts {
+    padding: 0;
+    margin-right: 0;
+  }
+  .footer__lists a,
+  .footer__contacts a,
+  .footer__contacts p {
+    font-size: 0.9em;
+  }
+}
+/*# sourceMappingURL=footer-accordion.css.map */

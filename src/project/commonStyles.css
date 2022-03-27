@@ -74,5 +74,8 @@
   .header_mobile {
     display: none !important;
   }
+  .footer__accordion {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=commonStyles.css.map */

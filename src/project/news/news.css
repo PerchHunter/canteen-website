@@ -90,19 +90,23 @@
 }
 
 .news__link {
+  font: 400 0.4em/35px "Myriad Pro - Light Semi Ext";
+}
+
+.link__button {
   width: 167px;
   height: 35px;
-  font: 400 16px/35px "Myriad Pro - Light Semi Ext";
   text-align: center;
   border-radius: 17px;
   color: #121212;
   border: 2px solid #121212;
   -webkit-transition: border-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.news__link:hover {
-  border: 2px solid #ffaf2d;
+.link__button:hover {
+  border-color: #ffaf2d;
 }
 
 .news__rightImages {
@@ -166,6 +170,9 @@
   }
   .news__article {
     font-size: 12px;
+  }
+  .news__link {
+    font-size: 14px;
   }
 }
 

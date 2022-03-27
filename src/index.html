@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
 
-    <link rel="stylesheet" href="./project/commonStyles.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- <link rel="stylesheet" href="./project/commonStyles.css" />
     <link rel="stylesheet" href="./project/header/header.css" />
     <link
       rel="stylesheet"
@@ -21,19 +23,19 @@
     <link
       rel="stylesheet"
       href="./project/catalog/catalog-dropdown/catalog-dropdown.css"
-    />
-    <link
+    /> -->
+    <!-- <link
       rel="stylesheet"
       href="./project/section-with-slider/__slider/slider.css"
-    />
-    <link
+    /> -->
+    <!-- <link
       rel="stylesheet"
       href="./project/section-with-slider/__categories/categories.css"
     />
     <link
       rel="stylesheet"
       href="./project/section-with-slider/__sale/sale.css"
-    />
+    /> -->
 
     <link
       rel="stylesheet"
@@ -57,14 +59,26 @@
     />
 
     <!-- бургер - меню с типом оборудования в мобильной версии -->
-    <link rel="stylesheet" href="./project/burger-menu/burger-menu.css" />
+    <!-- <link rel="stylesheet" href="./project/burger-menu/burger-menu.css" /> -->
     <!-- хедер в мобильной версии -->
-    <link rel="stylesheet" href="./project/header_mobile/header_mobile.css" />
+    <!-- <link rel="stylesheet" href="./project/header_mobile/header_mobile.css" /> -->
 
-    <link rel="stylesheet" href="./project/brands/brands.css" />
+    <!-- бургер всплывающий слева в мобильной версии -->
+    <!-- <link
+      rel="stylesheet"
+      href="./project/header_mobile/burger-menu-left/burger-menu-left.css"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="./project/brands/brands.css" />
     <link rel="stylesheet" href="./project/news/news.css" />
     <link rel="stylesheet" href="./project/recomendations/recomendations.css" />
     <link rel="stylesheet" href="./project/about-us/about-us.css" />
+    <link rel="stylesheet" href="./project/footer/footer.css" /> -->
+    <!-- аккордион футера для мобильной версии -->
+    <!-- <link
+      rel="stylesheet"
+      href="./project/footer/footer-accordion/footer-accordion.css"
+    /> -->
   </head>
 
   <body>
@@ -171,9 +185,18 @@
     <!-- хедер мобильной версии -->
     <div class="header_mobile">
       <div class="header_mobile__wrap_left">
-        <nav class="header_mobile__burger">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </nav>
+        <!-- боковое меню  бургер -->
+        <div class="header_mobile__burger_wrap">
+          <label for="header_mobile__burgerMenu" class="burger__button">
+            <input
+              type="checkbox"
+              name="header__side-menu"
+              id="header_mobile__burgerMenu"
+            />
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+        </div>
+
         <a href="#" class="header_mobile__link_logo">
           <figure class="link_logo__figure">
             <img
@@ -181,7 +204,7 @@
               alt="logo"
               class="figure__img"
             />
-            <figcaption class="link_logo__brand">
+            <figcaption class="link__name_brand">
               <h2 class="figure__heading">Столовая.РУ</h2>
               Создание пищеблоков
             </figcaption>
@@ -282,7 +305,7 @@
             </figure>
           </a>
 
-          <a class="upperMenu__cart">
+          <a class="upperMenu__cart" href="#">
             <div class="cart__wrap_image">
               <p class="cart__quantity"><span>8</span></p>
               <img
@@ -600,6 +623,12 @@
                 <article class="swiper-slide">Slide 3</article>
                 <article class="swiper-slide">Slide 4</article>
               </div>
+              <div class="swiper-button-next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
               <div class="swiper-pagination"></div>
             </div>
 
@@ -609,8 +638,8 @@
                 <!-- <div> -->
                 <p class="sale__text">Самые низкие цены</p>
                 <h3 class="sale__heading">Распродажа</h3>
-                <a href="#" class="sale__link_catalog"
-                  ><p class="link_catalog__text">Каталог распродаж</p>
+                <a href="#" class="sale__link_catalog">
+                  <p class="link_catalog__text">Каталог распродаж</p>
                 </a>
               </aside>
             </div>
@@ -654,9 +683,9 @@
                   alt="logo"
                   class="brands__logo" /></a
               ><span></span>
-              <a href="#" class="brands__link"
-                ><p class="brands__text">Все бренды</p></a
-              >
+              <a href="#" class="brands__link">
+                <p class="brands__text">Все бренды</p>
+              </a>
             </div>
           </div>
 
@@ -785,7 +814,9 @@
                   </div>
                 </article>
               </div>
-              <a href="#" class="news__link">Все новости</a>
+              <a href="#" class="news__link"
+                ><button class="link__button">Все новости</button></a
+              >
             </section>
           </div>
 
@@ -910,7 +941,12 @@
                     определённое оборудование для бара;
                   </li>
                 </ul>
-                <button class="aboutUs_textContent__button">+</button>
+                <a href="#"
+                  ><button class="aboutUs_textContent__button">
+                    <span class="button__icon"
+                      ><i class="fa fa-plus"></i
+                    ></span></button
+                ></a>
               </div>
               <aside class="aboutUs__aside">
                 <a href="#" class="aboutUs_aside__link">
@@ -943,11 +979,241 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__wrap_gray_background">
+        <div class="container container_padding">
+          <div class="footer__innerWrap hideInMobileVersion">
+            <nav class="footer__lists">
+              <h3 class="lists__title">Информация</h3>
+              <ul>
+                <li><a href="#" target="_blank">Компания</a></li>
+                <li><a href="#" target="_blank">Портфолио</a></li>
+                <li><a href="#" target="_blank">Проектирование</a></li>
+                <li><a href="#" target="_blank">Ресторанам</a></li>
+                <li><a href="#" target="_blank">Застройщикам</a></li>
+                <li><a href="#" target="_blank">Гос.заказчикам</a></li>
+                <li><a href="#" target="_blank">Таблет-питание</a></li>
+                <li><a href="#" target="_blank">Сервис</a></li>
+                <li><a href="#" target="_blank">Новости</a></li>
+                <li><a href="#" target="_blank">Контакты</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__lists">
+              <h3 class="lists__title">Оборудование</h3>
+              <ul>
+                <li><a href="#" target="_blank">Тепловое</a></li>
+                <li><a href="#" target="_blank">Холодильное</a></li>
+                <li><a href="#" target="_blank">Электромеханическое</a></li>
+                <li><a href="#" target="_blank">Посудомоечное</a></li>
+                <li><a href="#" target="_blank">Барное</a></li>
+                <li><a href="#" target="_blank">Хлебопекарное</a></li>
+                <li><a href="#" target="_blank">Линии раздачи</a></li>
+                <li><a href="#" target="_blank">Нейтральное</a></li>
+                <li><a href="#" target="_blank">Для фаст фуда</a></li>
+                <li><a href="#" target="_blank">Для залов</a></li>
+                <li><a href="#" target="_blank">Весовое</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__lists">
+              <h3 class="lists__title">Предложения</h3>
+              <ul>
+                <li><a href="#" target="_blank">Кафе, барам, ресторанам</a></li>
+                <li><a href="#" target="_blank">Дестким садам и школам</a></li>
+                <li><a href="#" target="_blank">Таблет-питание</a></li>
+                <li><a href="#" target="_blank">Для кондитерских</a></li>
+                <li><a href="#" target="_blank">Для пиццерий</a></li>
+                <li><a href="#" target="_blank">Для магазинов</a></li>
+                <li><a href="#" target="_blank">Для воинских частей</a></li>
+                <li><a href="#" target="_blank">Все предложения</a></li>
+              </ul>
+            </nav>
+            <address class="footer__contacts">
+              <h3 class="contacts__title">Контакты</h3>
+              <ul>
+                <li>
+                  <a href="tel:84951503171">8 495 150-31-71</a>
+                  <br />
+                  <a href="tel:88005004344">8 800 500 43 44</a>
+
+                  <p>звонок беспланый</p>
+                </li>
+                <li>
+                  <br />
+                  <p>Пн-Пт</p>
+                  <p>09:00 до 18:00</p>
+                </li>
+                <li>
+                  <br />
+                  <a href="mailto:com@stolovay.ru">com@stolovay.ru</a>
+                  <br />
+                  <a href="mailto:info@stolovay.ru">info@stolovay.ru</a>
+                </li>
+                <li>
+                  <br />
+                  <p>111524, Москва,</p>
+                  <p>Рязанский проспект 24к2</p>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- аккордеон футера в мобильной версии -->
+          <div class="footer__accordion">
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Информация</span>
+                <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+              </button>
+
+              <nav class="footer__lists accordion__content">
+                <ul>
+                  <li><a href="#" target="_blank">Компания</a></li>
+                  <li><a href="#" target="_blank">Портфолио</a></li>
+                  <li><a href="#" target="_blank">Проектирование</a></li>
+                  <li><a href="#" target="_blank">Ресторанам</a></li>
+                  <li><a href="#" target="_blank">Застройщикам</a></li>
+                  <li><a href="#" target="_blank">Гос.заказчикам</a></li>
+                  <li><a href="#" target="_blank">Таблет-питание</a></li>
+                  <li><a href="#" target="_blank">Сервис</a></li>
+                  <li><a href="#" target="_blank">Новости</a></li>
+                  <li><a href="#" target="_blank">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Оборудование</span>
+                <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+              </button>
+
+              <nav class="footer__lists accordion__content">
+                <ul>
+                  <li><a href="#" target="_blank">Тепловое</a></li>
+                  <li><a href="#" target="_blank">Холодильное</a></li>
+                  <li><a href="#" target="_blank">Электромеханическое</a></li>
+                  <li><a href="#" target="_blank">Посудомоечное</a></li>
+                  <li><a href="#" target="_blank">Барное</a></li>
+                  <li><a href="#" target="_blank">Хлебопекарное</a></li>
+                  <li><a href="#" target="_blank">Линии раздачи</a></li>
+                  <li><a href="#" target="_blank">Нейтральное</a></li>
+                  <li><a href="#" target="_blank">Для фаст фуда</a></li>
+                  <li><a href="#" target="_blank">Для залов</a></li>
+                  <li><a href="#" target="_blank">Весовое</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Предложения</span>
+                <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+              </button>
+
+              <nav class="footer__lists accordion__content">
+                <ul>
+                  <li>
+                    <a href="#" target="_blank">Кафе, барам, ресторанам</a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">Дестким садам и школам</a>
+                  </li>
+                  <li><a href="#" target="_blank">Таблет-питание</a></li>
+                  <li><a href="#" target="_blank">Для кондитерских</a></li>
+                  <li><a href="#" target="_blank">Для пиццерий</a></li>
+                  <li><a href="#" target="_blank">Для магазинов</a></li>
+                  <li><a href="#" target="_blank">Для воинских частей</a></li>
+                  <li><a href="#" target="_blank">Все предложения</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Контакты</span>
+                <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+              </button>
+
+              <address class="footer__contacts accordion__content">
+                <ul>
+                  <li>
+                    <a href="tel:84951503171">8 495 150-31-71</a>
+                    <br />
+                    <a href="tel:88005004344">8 800 500 43 44</a>
+
+                    <p>звонок беспланый</p>
+                  </li>
+                  <li>
+                    <br />
+                    <p>Пн-Пт</p>
+                    <p>09:00 до 18:00</p>
+                  </li>
+                  <li>
+                    <br />
+                    <a href="mailto:com@stolovay.ru">com@stolovay.ru</a>
+                    <br />
+                    <a href="mailto:info@stolovay.ru">info@stolovay.ru</a>
+                  </li>
+                  <li>
+                    <br />
+                    <p>111524, Москва,</p>
+                    <p>Рязанский проспект 24к2</p>
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Реквизиты</span>
+                <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+              </button>
+
+              <div class="accordion__content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nesciunt autem dolorem rem suscipit, voluptas, ut earum
+                  similique harum necessitatibus voluptatibus deserunt eveniet
+                  ipsum, aut animi aliquam cupiditate enim soluta dolores.
+                  Voluptates doloremque facilis aspernatur harum iure illo,
+                  tempora eum deleniti dolor necessitatibus quo ut veniam
+                  inventore quibusdam perspiciatis maxime odit, tenetur pariatur
+                  error laboriosam excepturi? Ipsum, libero quae. Ea, optio?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__wrap_black_background">
+        <div class="container container_padding">
+          <div class="footer__black_background_innerWrap">
+            <a href="#">
+              <figure class="footer__figure">
+                <img
+                  src="./images/about-us/logo.png"
+                  alt="logo"
+                  class="footer_figure__logo"
+                />
+
+                <figcaption>
+                  <h2>Столовая.РУ</h2>
+                  <p class="footer_figure__text">
+                    Создание оптимальных пищеблоков
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <small class="footer__small">Сайт разработан NTI-systems</small>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <script type="text/javascript" src="project/header/header.js"></script>
+    <!-- <script type="text/javascript" src="project/header/header.js"></script>
     <script
       type="text/javascript"
       src="project/header/telephone-dropdown/telephone-dropdown.js"
@@ -959,17 +1225,17 @@
     <script
       type="text/javascript"
       src="project/upper-menu/category-dropdown-details/category-dropdown-details.js"
-    ></script>
-    <script
+    ></script> -->
+    <!-- <script
       type="text/javascript"
       src="project/catalog/catalog-dropdown/catalog-dropdown.js"
     ></script>
     <script
       type="text/javascript"
       src="project/section-with-slider/__slider/__slider.js"
-    ></script>
+    ></script> -->
 
-    <script
+    <!-- <script
       type="text/javascript"
       src="./project/burger-menu/burger-menu.js"
     ></script>
@@ -977,6 +1243,12 @@
     <script
       type="text/javascript"
       src="./project/header_mobile/header_mobile.js"
-    ></script>
+    ></script> -->
+
+    <!-- аккордион футера для мобильной версии -->
+    <!-- <script
+      type="text/javascript"
+      src="./project/footer/footer-accordion/footer-accordion.js"
+    ></script> -->
   </body>
 </html>

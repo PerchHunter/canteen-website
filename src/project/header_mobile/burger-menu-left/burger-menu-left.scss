@@ -1,0 +1,52 @@
+#header_mobile__burgerMenu {
+  display: none;
+}
+
+.burger__button {
+  display: inline-block;
+  width: 73px;
+  height: 73px;
+  background-color: #fda11c;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 31px;
+}
+
+// #header_mobile__burgerMenu:checked .burger__button {
+//   background-color: red;
+// }
+
+.fa-bars {
+  color: #ffffff;
+  line-height: 73px;
+  font-size: 30px;
+}
+
+// @media screen and (max-width: 768px) {
+//   .header__chapters {
+//     // display: flex;
+//     // justify-content: space-between;
+//     // height: 48px;
+//     // // font-w font-s/line-h font-fam font-style
+//     // font: 400 16px/48px "Myriad Pro - Regular";
+//     position: relative;
+//     left: 0px;
+//     top: 0px;
+//     width: 100px;
+//     flex-direction: column;
+//     background-color: #f1f1f1;
+//   }
+
+//   .header__chapters a,
+//   .chapter_copyEmail,
+//   .chapter_telephone {
+//     // text-decoration: none;
+//     // color: #ffffff;
+//     // flex-grow: 1;
+//     // transition: background-color 0.2s;
+//     border-bottom: 1px solid #e2e2e2;
+//     padding: 2rem 1rem;
+//   }
+// }

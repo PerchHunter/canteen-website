@@ -39,15 +39,21 @@
   width: 50px;
   height: 50px;
   background-color: #232323;
-  font-size: 0.5em;
-  color: #ffffff;
   border-radius: 50%;
   border: 1px solid transparent;
   margin-top: 43px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.2s ease-in-out;
+}
+
+.button__icon {
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 .aboutUs_textContent__button:hover {
-  cursor: pointer;
+  color: #ffaf2d;
 }
 
 .aboutUs__aside {
@@ -66,6 +72,7 @@
   object-fit: contain;
   margin-bottom: 33px;
 }
+
 .aboutUs_figure__text {
   font: 300 0.53em/20px "Myriad Pro - Light Semi Ext";
   margin-top: 10px;
@@ -159,6 +166,7 @@
   .aboutUs_figure__logo {
     margin-bottom: 33px;
   }
+
   .aboutUs_figure__text {
     font-size: 0.53em;
     line-height: 20px;
@@ -178,8 +186,6 @@
   .parameters__subtitle {
     margin-bottom: 40px;
   }
-
-  //
 
   .aboutUs__textContent {
     width: 100%;
@@ -205,6 +211,9 @@
     width: 100px;
     height: 100px;
     margin-top: 60px;
-    font-size: 1em;
+  }
+
+  .button__icon {
+    font-size: 40px;
   }
 }

@@ -1,0 +1,134 @@
+.footer__wrap_gray_background {
+  background-color: #232323;
+  width: 100%;
+}
+
+.footer__innerWrap {
+  padding: 92px 4.3% 105px;
+  font: 400 24px/24px "Myriad Pro - Light Semi Ext";
+  color: #777777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__lists a,
+.footer__contacts a,
+.footer__contacts p {
+  font-size: 0.67em;
+  color: #ffffff;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+
+.footer__lists a:hover,
+.footer__contacts a:hover {
+  color: #ffaf2d;
+}
+
+.footer__lists {
+  margin-right: 20px;
+}
+
+.footer__contacts {
+  font-style: normal;
+}
+
+.lists__title {
+  margin-bottom: 30px;
+}
+
+.contacts__title {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1040px) {
+  .footer__innerWrap {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.footer__wrap_black_background {
+  background-color: #1f1f1f;
+  width: 100%;
+}
+
+.footer__black_background_innerWrap {
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4.3%;
+}
+
+.footer__figure {
+  height: 100%;
+  font: 400 24px/24px "Myriad Pro - Regular";
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_figure__logo {
+  height: 40px;
+  margin-right: 17px;
+}
+
+.footer_figure__text {
+  color: #787878;
+  font: 300 0.75em/ 30px "Myriad Pro - Light Semi Ext";
+}
+
+.footer__small {
+  color: #ffffff;
+  font: 400 0.75em/ 24px "Myriad Pro - Light Semi Ext";
+}
+
+@media screen and (max-width: 768px) {
+  .footer__black_background_innerWrap {
+    height: 240px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 40px 0;
+  }
+  .footer__figure {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font: 400 30px/50px "Myriad Pro - Regular";
+  }
+  .footer_figure__logo {
+    height: 88px;
+    margin-right: 23px;
+  }
+  .footer__small {
+    font: 300 40px "Myriad Pro - Light Semi Ext";
+    letter-spacing: 0.32px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

@@ -40,8 +40,21 @@
 .brands__text {
   font: 400 18px "Myriad Pro - Regular";
 }
+
 .brands__link:hover {
   color: #ffaf2d;
+}
+
+@media screen and (max-width: 1100px) {
+  .brands__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .brands__text {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 768px) {

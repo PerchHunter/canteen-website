@@ -14,27 +14,13 @@
   align-items: center;
 }
 
+// .header_mobile__wrap_left label {
+//   display: inline-block;
+//   margin-right: 31px;
+// }
+
 .header_mobile__wrap_right div {
   padding: 19px 15px;
-}
-
-.header_mobile__burger {
-  width: 73px;
-  height: 73px;
-  background-color: #fda11c;
-  border-radius: 50%;
-  text-align: center;
-  margin-right: 31px;
-}
-
-.header_mobile__burger {
-  cursor: pointer;
-}
-
-.fa-bars {
-  color: #ffffff;
-  line-height: 73px;
-  font-size: 30px;
 }
 
 .header_mobile__link_logo {
@@ -50,9 +36,10 @@
 
 .figure__img {
   height: 100%;
+  margin-right: 10px;
 }
 
-.link_logo__brand {
+.link__name_brand {
   font: 400 18px "Myriad Pro - Regular";
   color: #777777;
 }
