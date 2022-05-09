@@ -1,28 +1,28 @@
 function getCopyEmailButton(e) {
-  const $button = document.querySelector(".copyEmailButton");
-
-  if ($button == null) {
-    return e.target.insertAdjacentHTML(
+  let button = document.getElementById("copyEmailButton");
+  //если кнопки пока нет
+  if (!button) {
+    //e.currentTarget  то же что и this
+    e.currentTarget.insertAdjacentHTML(
       "beforeend",
-      '<button type="button" class="copyEmailButton" onClick="copyEmail(event)">Скопировать</button>'
+      '<button type="button" id="copyEmailButton">Скопировать</button>'
     );
   } else {
     return;
   }
+
+  button = document.getElementById("copyEmailButton");
+  button.addEventListener("click", copyEmail);
 }
 
-function copyEmail() {
-  const $blockContent =
-    document.querySelector(".chapter_copyEmail").textContent;
-  const regexp = /info\@stolovay\.ru/;
-  const email = $blockContent.match(regexp)[0];
+function copyEmail(e) {
+  e.stopPropagation();
 
-  navigator.clipboard
-    .writeText(email)
-    .then(() => {})
-    .catch((err) => {
-      console.log("Что-то пошло не так", err);
-    });
+  const email = e.target.previousElementSibling.innerText;
 
-  document.getElementsByClassName("copyEmailButton")[0].remove();
+  navigator.clipboard.writeText(email);
+  e.target.remove();
 }
+
+const headerChapterEmail = document.querySelector(".chapter_copyEmail");
+headerChapterEmail.addEventListener("click", getCopyEmailButton);

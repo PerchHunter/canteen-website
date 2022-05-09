@@ -22,11 +22,11 @@
   cursor: pointer;
 }
 
-.menu-burger__span {
+.burger-menu__span {
   color: #777777;
 }
 
-.menu-burger__list {
+.burger-menu__list {
   position: absolute;
   left: 0;
   top: 100%;
@@ -38,7 +38,7 @@
   z-index: 2;
 }
 
-.burger__menu_item {
+.burger-menu__list a {
   font: 400 24px "Myriad Pro - Light Semi Ext";
   display: block;
   padding: 0;
@@ -50,7 +50,7 @@
   opacity: 0;
 }
 
-.burger__menu_item:hover {
+.burger-menu__list a:hover {
   color: #ffaf2d;
   background-color: #ebebeb;
 }

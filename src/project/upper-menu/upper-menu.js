@@ -1,8 +1,7 @@
 function replaceSupplierPortalImage() {
-  const $supplierPortalImage = document.getElementsByClassName(
-    "supplierPortal__image"
-  )[0];
+  const $supplierPortalImage = document.getElementById("supplierPortal__image");
   const src = $supplierPortalImage.getAttribute("src");
+
   if (src === "images/upper-menu/supplier-portal.svg") {
     $supplierPortalImage.setAttribute(
       "src",

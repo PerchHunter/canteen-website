@@ -108,10 +108,10 @@ class HoverIntent {
   }
 }
 
-const deleteDropdown = () => {
-  $elem.lastElementChild.style.opacity = 0;
-  setTimeout(($elem.lastElementChild.style.zIndex = -1), 10);
-};
+// const deleteDropdown = () => {
+//   $elem.lastElementChild.style.opacity = 0;
+//   setTimeout(($elem.lastElementChild.style.zIndex = -1), 10);
+// };
 
 const over = () => {
   $elem.lastElementChild.style.zIndex = 2;
@@ -126,3 +126,11 @@ const out = () => {
 };
 
 new HoverIntent(0.1, 100, $elem, over, out);
+
+const $closeDropdown = document.getElementById("btn_close_block");
+
+$closeDropdown.onclick = function () {
+  $elem.lastElementChild.style.opacity = 0;
+  setTimeout(($elem.lastElementChild.style.zIndex = -1), 10);
+  $page.style.filter = "none";
+};

@@ -4,10 +4,16 @@
   "description": "Сайт столовой. Просто работа для практики",
   "main": "app.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve",
+    "start": "set NODE_ENV=development&&webpack serve",
+    "dev": "set NODE_ENV=development&&webpack",
+    "build": "set NODE_ENV=production&&webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 10"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PerchHunter/canteen-website.git"
@@ -19,21 +25,24 @@
   },
   "homepage": "https://github.com/PerchHunter/canteen-website#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.5.1",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
-    "node-sass": "^7.0.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.13",
     "postcss-loader": "^6.2.1",
-    "postcss-preset-env": "^7.3.0",
-    "sass-loader": "^12.4.0",
+    "postcss-preset-env": "^7.5.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
-    "webpack": "^5.68.0",
+    "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.3",
-    "url-loader": "^4.1.1"
+    "webpack-dev-server": "^4.9.0"
   }
 }

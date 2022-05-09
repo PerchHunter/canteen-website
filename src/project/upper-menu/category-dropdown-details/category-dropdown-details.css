@@ -24,10 +24,6 @@
   cursor: pointer;
 }
 
-.form__category:hover {
-  cursor: pointer;
-}
-
 /* Убираем стандартный маркер Chrome */
 .category__checked::-webkit-details-marker {
   display: none;
@@ -54,6 +50,8 @@
   padding: 17px 36px 41px 14px;
   position: relative;
   z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .dropdown__heading {

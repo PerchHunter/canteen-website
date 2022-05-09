@@ -23,19 +23,12 @@
     <link
       rel="stylesheet"
       href="./project/catalog/catalog-dropdown/catalog-dropdown.css"
-    /> -->
-    <!-- <link
-      rel="stylesheet"
-      href="./project/section-with-slider/__slider/slider.css"
-    /> -->
-    <!-- <link
-      rel="stylesheet"
-      href="./project/section-with-slider/__categories/categories.css"
     />
     <link
       rel="stylesheet"
-      href="./project/section-with-slider/__sale/sale.css"
-    /> -->
+      href="./project/section-with-slider/categories/categories.css"
+    />
+    <link rel="stylesheet" href="./project/section-with-slider/sale/sale.css" /> -->
 
     <link
       rel="stylesheet"
@@ -43,10 +36,10 @@
     />
 
     <!-- Link Swiper's CSS -->
-    <link
+    <!-- <link
       rel="stylesheet"
-      href="./project/section-with-slider/__slider/slider.css"
-    />
+      href="./project/section-with-slider/slider/slider.css"
+    /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -59,7 +52,7 @@
     />
 
     <!-- бургер - меню с типом оборудования в мобильной версии -->
-    <!-- <link rel="stylesheet" href="./project/burger-menu/burger-menu.css" /> -->
+
     <!-- хедер в мобильной версии -->
     <!-- <link rel="stylesheet" href="./project/header_mobile/header_mobile.css" /> -->
 
@@ -96,7 +89,7 @@
           <span class="chapters__division"></span>
           <a href="#">Сервис</a>
           <a href="#">Контакты</a>
-          <div class="chapter_copyEmail" onclick="getCopyEmailButton(event)">
+          <div class="chapter_copyEmail">
             <img
               alt="image"
               src="./images/header/header_email.png"
@@ -173,7 +166,7 @@
                       Отправить
                     </button>
                   </form>
-                  <span id="btn_close_block" onclick="deleteDropdown()">X</span>
+                  <span id="btn_close_block">X</span>
                 </div>
               </div>
             </div>
@@ -182,7 +175,7 @@
       </div>
     </div>
 
-    <!-- хедер мобильной версии -->
+    <!-- шапка в мобильной версии -->
     <div class="header_mobile">
       <div class="header_mobile__wrap_left">
         <!-- боковое меню  бургер -->
@@ -230,20 +223,20 @@
     <!-- бургер-меню "Оборудование" в мобильной версии -->
     <nav class="burger-menu">
       <p>Оборудование</p>
-      <span class="menu-burger__span">></span>
+      <span class="burger-menu__span">></span>
 
-      <ul class="menu-burger__list">
-        <li><a class="burger__menu_item" href="#">Тепловое</a></li>
-        <li><a class="burger__menu_item" href="#">Холодильное</a></li>
-        <li><a class="burger__menu_item" href="#">Электромеханическое</a></li>
-        <li><a class="burger__menu_item" href="#">Посудомоечное</a></li>
-        <li><a class="burger__menu_item" href="#">Барное</a></li>
-        <li><a class="burger__menu_item" href="#">Хлебопекарное</a></li>
-        <li><a class="burger__menu_item" href="#">Линии раздачи</a></li>
-        <li><a class="burger__menu_item" href="#">Нейтральное</a></li>
-        <li><a class="burger__menu_item" href="#">Для фаст фуда</a></li>
-        <li><a class="burger__menu_item" href="#">Для залов</a></li>
-        <li><a class="burger__menu_item" href="#">Весовое</a></li>
+      <ul class="burger-menu__list">
+        <li><a href="#">Тепловое</a></li>
+        <li><a href="#">Холодильное</a></li>
+        <li><a href="#">Электромеханическое</a></li>
+        <li><a href="#">Посудомоечное</a></li>
+        <li><a href="#">Барное</a></li>
+        <li><a href="#">Хлебопекарное</a></li>
+        <li><a href="#">Линии раздачи</a></li>
+        <li><a href="#">Нейтральное</a></li>
+        <li><a href="#">Для фаст фуда</a></li>
+        <li><a href="#">Для залов</a></li>
+        <li><a href="#">Весовое</a></li>
       </ul>
     </nav>
 
@@ -283,6 +276,7 @@
                 id="searchLine"
                 class="form__input"
                 placeholder="Введите что - нибудь..."
+                value=""
               />
               <button class="form__button" type="button" form="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -292,13 +286,12 @@
 
           <a href="#" class="upperMenu__supplierPortal">
             <figure class="supplierPortal__figure">
-              <p>
-                <img
-                  src="images/upper-menu/supplier-portal.svg"
-                  alt="image"
-                  class="supplierPortal__image"
-                />
-              </p>
+              <img
+                src="images/upper-menu/supplier-portal.svg"
+                alt="image"
+                id="supplierPortal__image"
+              />
+
               <figcaption class="supplierPortal__text">
                 Мы на портале поставщиков
               </figcaption>
@@ -327,47 +320,47 @@
         <div class="container">
           <section class="catalog">
             <div id="catalog__thermal">
-              <img src="images/catalog/тепловое.png" alt="image" />
+              <img src="./images/catalog/тепловое.png" alt="image" />
               <p>Тепловое</p>
             </div>
             <div id="catalog__refrigerating">
-              <img src="images/catalog/холодильное.png" alt="image" />
+              <img src="./images/catalog/холодильное.png" alt="image" />
               <p>Холодильное</p>
             </div>
             <div>
-              <img src="images/catalog/электромеханическое.png" alt="image" />
+              <img src="./images/catalog/электромеханическое.png" alt="image" />
               <p>Электромеханическое</p>
             </div>
             <div>
-              <img src="images/catalog/посудомоечное.png" alt="image" />
+              <img src="./images/catalog/посудомоечное.png" alt="image" />
               <p>Посудомоечное</p>
             </div>
             <div>
-              <img src="images/catalog/хлебопекарное.png" alt="image" />
+              <img src="./images/catalog/хлебопекарное.png" alt="image" />
               <p>Хлебопекарное</p>
             </div>
             <div>
-              <img src="images/catalog/линии_раздачи.png" alt="image" />
+              <img src="./images/catalog/линии_раздачи.png" alt="image" />
               <p>Линии раздачи</p>
             </div>
             <div>
-              <img src="images/catalog/нейтральное.png" alt="image" />
+              <img src="./images/catalog/нейтральное.png" alt="image" />
               <p>Нейтральное</p>
             </div>
             <div>
-              <img src="images/catalog/для_фаст_фуда.png" alt="image" />
+              <img src="./images/catalog/для_фаст_фуда.png" alt="image" />
               <p>Для фаст фуда</p>
             </div>
             <div>
-              <img src="images/catalog/для_залов.png" alt="image" />
+              <img src="./images/catalog/для_залов.png" alt="image" />
               <p>Для залов</p>
             </div>
             <div>
-              <img src="images/catalog/вспомогательное.png" alt="image" />
+              <img src="./images/catalog/вспомогательное.png" alt="image" />
               <p>Вспомогательное</p>
             </div>
             <div>
-              <img src="images/catalog/для_магазинов.png" alt="image" />
+              <img src="./images/catalog/для_магазинов.png" alt="image" />
               <p>Для магазинов</p>
             </div>
           </section>
@@ -465,10 +458,6 @@
               </li>
             </ul>
           </nav>
-          <!-- <div class="thermal__submenu">
-          <div class="thermal__submenu__filters"></div>
-          <div class="thermal__submenu__all"></div>
-        </div>-->
         </div>
 
         <!-- холодильное оборудование -->
@@ -634,7 +623,7 @@
 
             <div class="sidebar_sale_wrap">
               <aside class="sidebar_sale">
-                <img src="images/offers/sale.png" class="sale__image" />
+                <img src="./images/offers/sale.png" class="sale__image" />
                 <!-- <div> -->
                 <p class="sale__text">Самые низкие цены</p>
                 <h3 class="sale__heading">Распродажа</h3>
@@ -1216,33 +1205,28 @@
     <!-- <script type="text/javascript" src="project/header/header.js"></script>
     <script
       type="text/javascript"
-      src="project/header/telephone-dropdown/telephone-dropdown.js"
+      src="./project/header/telephone-dropdown/telephone-dropdown.js"
     ></script>
     <script
       type="text/javascript"
-      src="project/upper-menu/upper-menu.js"
+      src="./project/upper-menu/upper-menu.js"
     ></script>
     <script
       type="text/javascript"
-      src="project/upper-menu/category-dropdown-details/category-dropdown-details.js"
-    ></script> -->
-    <!-- <script
-      type="text/javascript"
-      src="project/catalog/catalog-dropdown/catalog-dropdown.js"
+      src="./project/upper-menu/category-dropdown-details/category-dropdown-details.js"
     ></script>
     <script
       type="text/javascript"
-      src="project/section-with-slider/__slider/__slider.js"
-    ></script> -->
+      src="./project/catalog/catalog-dropdown/catalog-dropdown.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./project/section-with-slider/slider/slider.js"
+    ></script>
 
-    <!-- <script
+    <script
       type="text/javascript"
       src="./project/burger-menu/burger-menu.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="./project/header_mobile/header_mobile.js"
     ></script> -->
 
     <!-- аккордион футера для мобильной версии -->

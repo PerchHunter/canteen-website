@@ -1,73 +1,122 @@
-const webpack = require("webpack");
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-//плагин очищающий директорию «dist» при каждой сборке проекта
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // импортируем плагины для html и css
 
+let mode = "development";
+if (process.env.NODE_ENV === "production") {
+  mode = "production";
+}
+console.log(mode + " mode");
+
+//указ-ем, что файл конф-ции явл-ся отдельным модулем, который мы эксп-ем наружу
 module.exports = {
-  // установил настройки для режима разработки.
-  // Для продакшна следует использовать MiniCssExtractPlugin вместо style-loader,
-  // который экспортирует минифицированный CSS
-  mode: "development",
+  mode: mode,
   entry: {
-    main: path.resolve(__dirname, "./src/app.js"),
+    // ключи scripts и user - этоимена выходных файлов, которые скомпилируются в папку dist
+    // index.js, user.js - пути к исх файлам в папке src
+    // scripts: "./src/index.js",
+    //     user: "./src/user.js",
   },
   output: {
-    path: path.resolve(__dirname, "./dist"),
-    filename: "[name].bundle.js",
+    // добавляем хеш к названиям файлов js
+    filename: "[name].[contenthash].js",
+    // чтобы изобр-я из папки src сохранялись в отдельную папку в dist. Исодное назв-е изобр-я: хеш.расширение query-параметр
+    assetModuleFilename: "assets/[hash][ext][query]",
+    //чтобы при каждой компиляции папка dist очищалась и в неё добавлялись новые файлы
+    clean: true,
   },
   devServer: {
-    historyApiFallback: true,
+    //опции открытия браузера и перезагрузки страницы при изменениях
     open: true,
-    compress: true,
-    hot: true,
-    port: 8080,
+    static: {
+      directory: "./src",
+      watch: true,
+    },
   },
-  watch: true,
+  //чтобы видеть карты  стилей в девтулсе браузера
+  devtool: "source-map",
+  //чтобы код из библиотеки jquery не попадал в каждый js-файл, применим оптимизацию. Код jquery быдет вынесен в отдельный файл и импортирован в каждый файл раздела entry
+  //   optimization: {
+  // включается в работу  splitChunkPlugin, который отвечает за дробление файлов
+  //     splitChunks: {
+  //       chunks: "all",
+  //     },
+  //   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/index.html"), // шаблон. index.html из папки src
-      filename: "index.html", // название выходного файла
+    //плагины - это классы, поэтому объявляем экземпляры классов
+    new MiniCssExtractPlugin({
+      //доб-ем хеш к имени файла чтобы при каждой сборке назв-е файла было разное и новые стили грузились с сервера на клиент
+      filename: "[name].[contenthash].css",
     }),
-    // применять изменения только при горячей перезагрузке
-    // new webpack.HotModuleReplacementPlugin(),
-    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html", //./src/index.pug если используем pug
+    }),
   ],
   module: {
     rules: [
-      // JavaScript
+      //настройка лоадеров
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ["babel-loader"],
+        test: /\.html$/i,
+        loader: "html-loader",
       },
-      // изображения
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        //проверяет наличие в папке src файлов sass/scss/css. Если находит, передаёт их лоадерам
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          // style-loader напрямую встраивает стили в head dom-дерева. MiniCssExtractPlugin.loader извлекает стили в отдельный файл папки dist
+          mode === "development" ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    // в него по умолчанию включён postcss - autoprefixer, который добавляет стилям префиксы для поддержки более старых браузеров
+                    // ориентируется на browserslist из package.json
+                    "postcss-preset-env",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+          "sass-loader",
+        ],
+      },
+      {
+        //передает найденные изобр-я в папке src модулю ресурсов
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
-      // шрифты и SVG
       {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-        type: "asset/inline",
+        //шрифты
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
-      // CSS, PostCSS, Sass
+      //   {
+      //     // шаблонизатор pug
+      // npm i --save-dev pug pug-loader
+      //     test: /\.pug$/,
+      //     loader: "pug-loader",
+      //     exclude: /(node_modules|bower_components)/,
+      //   },
       {
-        test: /\.scss$/,
-        // добавляем 4 загрузчика.
-        // Загрузчики используются вебпаком справа налево,
-        // так что последним должен быть sass-loader,
-        // затем PostCSS, затем CSS и style-loader,
-        // который применяет скомпилированные стили к элементам DOM
-        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
+        //поиск всех js-файлов и передача их на обработку бабель-лоадеру
+        test: /\.m?js$/,
+        // исключает папку node_modules из проверки
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          // options: {
+          //     presets: ['@babel/preset-env']
+          // }
+        },
       },
-
-      // изображения. url-loader
-      // {
-      //   test: /\.(jpg|png|gif)$/,
-      //   include: /images/,
-      //   loader: "url",
-      // },
     ],
   },
 };
+
+// npm i jquery bootstrap @popperjs/core
+// @popperjs/core - библиотека, позволяющая размещать всплывающие окна над элементами бутстрапа

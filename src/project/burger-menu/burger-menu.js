@@ -1,6 +1,6 @@
 const burgerMenu = document.querySelector(".burger-menu");
-const burgerMenuList = document.querySelector(".menu-burger__list");
-const burgerItem = document.getElementsByClassName("burger__menu_item");
+const burgerMenuList = document.querySelector(".burger-menu__list");
+const burgerItem = document.querySelectorAll(".burger-menu__list a");
 let visible = false;
 
 burgerMenu.onclick = (event) => {
@@ -15,7 +15,7 @@ burgerMenu.onclick = (event) => {
     visible = false;
     return;
   }
-
+  console.log(burgerItem);
   for (item of burgerItem) {
     item.style.cssText = `height: initial;
     opacity: 1;
