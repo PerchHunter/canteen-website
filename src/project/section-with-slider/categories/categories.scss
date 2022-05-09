@@ -1,0 +1,101 @@
+.sectionWithSlider {
+  max-height: 476px;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.productСategories {
+  width: 20%;
+  height: inherit;
+  background-color: #e8e7e7;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.productСategories:hover {
+  background-color: #ffffff;
+}
+
+.productСategories__heading {
+  font: 400 24px "Myriad Pro - Regular";
+  color: #ffaf2d;
+  padding: 33px 0px 12px 28px;
+}
+
+.productСategories__products {
+  font: 400 16px/44px "Myriad Pro - Light Semi Ext";
+  color: #303030;
+}
+
+.productСategories__products li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(186, 186, 186, 0.25);
+  padding: 0px 21px 0px 28px;
+  transition: color 0.2s ease-in-out;
+}
+
+.productСategories__products span {
+  font: 400 14px/44px "Myriad Pro - Light Semi Ext";
+  color: rgba(48, 48, 48, 0.4);
+}
+
+.productСategories__products li:hover {
+  cursor: pointer;
+  color: #ffaf2d;
+}
+
+@media screen and (max-width: 1410px) {
+  .productСategories__heading {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+
+  .productСategories__products {
+    font-size: 14px;
+  }
+
+  .productСategories__products li {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .productСategories__heading {
+    font-size: 17px;
+    padding-left: 5px;
+  }
+
+  .productСategories__products {
+    font-size: 12px;
+  }
+
+  .productСategories__products li {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .productСategories__heading {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+
+  .productСategories__products {
+    font-size: 10px;
+  }
+
+  .productСategories__products li {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionWithSlider {
+    display: flex;
+    flex-direction: column;
+    max-height: initial;
+  }
+}
